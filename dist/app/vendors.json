@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Parantha Corner",
+        "img": "assets/images/pics-1.jpg",
+        "menuItems": {
+            "stuffedParantha": {
+                "name": "Stuffed Parantha",
+                "rate": 40
+            },
+            "normalParantha": {
+                "name": "Normal Parantha",
+                "rate": 20
+            },
+            "plainParantha": {
+                "name": "Plain Parantha",
+                "rate": 10
+            },
+            "tawaParantha": {
+                "name": "Tawa Parantha",
+                "rate": 30
+            }
+        }
+    },
+    {
+        "title": "Pavitra Juice Center",
+        "img": "assets/images/pics2.jpg"
+    },
+    {
+        "title": "Parantha Corner 2",
+        "img": "assets/images/pics-1.jpg"
+    },
+    {
+        "title": "Pavitra Juice Center 2",
+        "img": "assets/images/pics2.jpg"
+    }
+]

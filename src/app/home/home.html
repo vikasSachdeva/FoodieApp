@@ -1,0 +1,13 @@
+<div class="animated fadeIn">
+    <p class="higlighted-label">Please Select Restaurants</p>
+    <div class="inner-addon right-addon">
+        <i class="glyphicon glyphicon-search"></i>
+        <input type="text" class="search-input form-control" ng-model="searchKeyword" placeholder="Search Menu">
+    </div>
+    <ul class="vendor-list">
+        <li class="col-lg-6 col-md-6 col-sm-6 col-xs-12 particular-vendor" ng-repeat="vendor in home.vendors | filter: searchKeyword | orderBy: orderList">
+            <img class="vendor-image" ng-click="home.setVendor(vendor)" ng-src="{{vendor.img}}" alt="{{vendor.title}} image">
+        </li>
+        <label class="give-space"></label>
+    </ul>
+</div>

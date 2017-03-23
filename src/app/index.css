@@ -1,0 +1,327 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+}
+
+.thumbnail img.pull-right {
+  width: 50px;
+}
+
+.menu-items-list {
+  border-bottom: 2px solid #76b252;
+  list-style: none;
+  border-radius: 0px;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+.menu-items-list:hover {
+  background-color: lightgreen
+}
+
+.menu-item-ul {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.menu-item{
+  padding-bottom: 1em;
+}
+/*.menu-item {
+  display: inline-block;
+}
+*/
+.menu-item-name {
+  text-align: left;
+  left: 1em;
+}
+
+.quantity-display {
+  text-align: center;
+}
+
+.menu-item-quantity {
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-item-rate {
+  text-align: right;
+  right: 1em;
+}
+
+.inner-addon {
+  position: relative;
+}
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.search-box {
+  margin-bottom: 1em;
+}
+
+.glyphicon-search {
+  font-size: large;
+}
+
+.right-addon .glyphicon { right: 0px;}
+
+.right-addon input { padding-right: 30px; }
+
+.search-input {
+  width: 100%;
+  height: 42px;
+  border: 1px solid #cccccc;
+  font-family: 'Trebuchet MS';
+  font-size: 15px;
+  color: #9c9998;
+  padding-left: 8px;
+  border-radius: 4px;
+}
+
+.footer-class {
+  background-color: #76b252;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  color: #ffffff;
+  line-height: 50px;
+  font-size: 15px;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 1em; 
+}
+.higlighted-label {
+  line-height: 46px;
+  background-color: #da5421;
+  font-family: 'Trebuchet MS';
+  font-size: 14px;
+  padding-left: 15px;
+  vertical-align: middle;
+  color: #ffffff;
+  margin-bottom: 1em;
+  border-radius: 4px;
+}
+
+.total-label {
+  margin-top: 3em;
+  
+  color: #da5421;
+}
+
+.total-money {
+  text-align: right;
+  padding-right: 1em;
+  line-height: 46px;
+  background-color: #da5421;
+  width: 300px;
+  font-family: 'Trebuchet MS';
+  font-size: 14px;
+  vertical-align: middle;
+  color: #ffffff;
+  margin-bottom: 1em;
+  border-radius: 4px;
+}
+
+.my-form-label {
+  font-size: 15px;
+  color: #9c9998;
+  font-weight: normal;
+}
+
+.my-form-btn {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: normal;
+  background-color: #76b252;
+  width: 202px;
+  height: 45px;
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+.checkout-btn {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: normal;
+  background-color: #76b252;
+  border-color: #46891e;
+  width: 120px;
+  height: 30px;
+  margin-bottom: 4em;
+}
+
+.req-label:after{
+  padding-left:2px;
+  content:"*" ;
+  color:red    
+}
+
+.my-form-input {
+  height: 46px;
+}
+
+.form-styling {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+}
+
+.btn-registration {
+  height: 24px;
+  width: 161px;
+  background: #c3c3c3;
+  border: #8c8b8b;
+  border-width: 1px;
+  color: white;
+  font-size: 12px;
+}
+
+.btn-registration:hover,
+.btn-registration:focus {
+    background-color: darkgray;
+    color: #ffffff;    
+}
+
+.reg-paragraph {
+  width: 100%;
+}
+
+.mandatory-label {
+  display: none
+}
+
+.mandatory-label-mobile {
+  color: red;
+  font-size: 12px;
+}
+
+.give-space {
+  margin-bottom: 4em;
+}
+
+.vendor-list {
+  padding: 0;  
+}
+
+.particular-vendor {
+  margin-top: 2em;
+  list-style: none;
+  padding-left: 5em;
+  padding-right: 5em;
+  text-align: center;
+}
+
+.vendor-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.validation-styling {
+  color: #cb4d3c;  
+  padding: 1em;
+  border-radius: 0px;
+  font-size: 15px;
+  margin-top: 2em;
+  border: 1px solid #cb4d3c
+}
+
+.has-error {
+  border: #cb4d3c;
+}
+
+@media (min-width: 768px) {
+  .search-input {
+    height: 62px;
+  }
+  .glyphicon-search {
+    font-size: xx-large;
+  }
+  .footer-class {
+    padding-right: 3em; 
+  }
+  .total-label {
+    font-size: large;  
+  }
+  
+  .total-money {
+    line-height: 64px;
+    width: 462px;
+    font-size: 20px;
+  }
+
+  .higlighted-label {
+    line-height: 93px;
+    font-size: 22px;
+    margin-bottom: 2em;
+  }
+  .my-form-label {
+    font-size: 22px;
+  }
+
+  .my-form-btn {
+    font-size: 22px;
+    width: 270px;
+    height: 58px;
+    margin-top: 2em;
+  }
+  
+  .checkout-btn {
+    font-size:20px;
+    width: 194px;
+    height: 40px;
+  }
+
+  .my-form-input {
+    width: 668px;
+    height: 64px;
+  }
+
+  .form-styling {
+    width: 668px;
+  }
+
+  .btn-registration {
+    height: 38px;
+    width: 260px;
+    font-size: 18px;
+  }
+  .menu-item-quantity {
+    width: 70%;
+  }
+  .mandatory-label {
+    display: block;
+    font-weight: normal;
+    padding-top: 33px;
+    font-family: 'Trebuchet MS';
+    font-size: 18px;
+    height: 60px;
+    padding-right: 1em;
+  }
+  
+  .mandatory-label-mobile {
+      display: none;
+  }
+  
+  .particular-vendor {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+@media (max-width: 438px) {
+    .my-form-btn.not-last-btn{
+        margin-bottom: 0;
+    }
+}

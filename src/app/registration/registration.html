@@ -1,0 +1,53 @@
+<div class="animated fadeIn">
+    <p class="higlighted-label">User Registration<span class="pull-right mandatory-label">Fields marked with an asterisk(*) are mandatory</span></p>
+    <span class="mandatory-label-mobile">Fields marked with an asterisk(*) are mandatory</span>
+    <div class="form-styling">
+    <form name="registrationForm" ng-submit="registration.submitRegForm()" novalidate>
+        
+        <div ng-messages="registrationForm.firstName.$error" ng-if="registrationForm.firstName.$touched">
+            <p class="validation-styling" ng-message="required"><i class="glyphicon glyphicon-exclamation-sign"></i>  First Name is required.</p>
+            <p class="validation-styling" ng-message="minlength"><i class="glyphicon glyphicon-exclamation-sign"></i>  First Name is too short.</p>
+            <p class="validation-styling" ng-message="pattern"><i class="glyphicon glyphicon-exclamation-sign"></i>  First name can only contain alphabets</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': registrationForm.firstName.$invalid && registrationForm.firstName.$dirty }">
+            <label class="my-form-label req-label" for="firstName">First Name</label>
+            <input type="text" class="form-control my-form-input" ng-minlength="2" ng-pattern="/^[A-z]+$/" ng-model="registration.user.firstName" name="firstName" id="firstName" placeholder="First Name" required>
+        </div>
+        
+        <div ng-messages="registrationForm.lastName.$error" ng-if="registrationForm.lastName.$touched">
+            <p class="validation-styling" ng-message="required"><i class="glyphicon glyphicon-exclamation-sign"></i>  Last Name is required.</p>
+            <p class="validation-styling" ng-message="minlength"><i class="glyphicon glyphicon-exclamation-sign"></i>  Last Name is too short.</p>
+            <p class="validation-styling" ng-message="pattern"><i class="glyphicon glyphicon-exclamation-sign"></i>  Last name can only contain alphabets</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': registrationForm.lastName.$invalid && registrationForm.lastName.$dirty }">
+            <label class="my-form-label req-label" for="lastName">Last Name</label>
+            <input type="text" class="form-control my-form-input" ng-minlength="2" ng-pattern="/^[A-z]+$/" ng-model="registration.user.lastName" name="lastName" id="lastName" placeholder="Last Name" required>
+        </div>
+        
+        <div ng-messages="registrationForm.regUsername.$error" ng-if="registrationForm.regUsername.$touched">
+            <p class="validation-styling" ng-message="required"><i class="glyphicon glyphicon-exclamation-sign"></i>  Username is required.</p>
+            <p class="validation-styling" ng-message="pattern"><i class="glyphicon glyphicon-exclamation-sign"></i>  Username can only contain alphabets, numbers and dots</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': registrationForm.regUsername.$invalid && registrationForm.regUsername.$dirty }">
+            <label class="my-form-label req-label" for="regUsername">Username</label>
+            <input type="text" class="form-control my-form-input" ng-pattern="/^[a-z0-9.]+$/i" ng-model="registration.user.regUsername" name="regUsername" id="regUsername" placeholder="Username" required>
+        </div>
+        
+        <div ng-messages="registrationForm.regPassword.$error" ng-if="registrationForm.regPassword.$touched">
+            <p class="validation-styling" ng-message="minlength"><i class="glyphicon glyphicon-exclamation-sign"></i>  Password should have minimum 8 characters</p>
+            <p class="validation-styling" ng-message="maxlength"><i class="glyphicon glyphicon-exclamation-sign"></i>  Password can be maximum of 20 characters</p>
+            <p class="validation-styling" ng-message="required"><i class="glyphicon glyphicon-exclamation-sign"></i>  Password is required</p>
+            <p class="validation-styling" ng-message="pattern"><i class="glyphicon glyphicon-exclamation-sign"></i>  Password should have at least an alphabet, a number and a special character </p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': registrationForm.regPassword.$invalid && registrationForm.regPassword.$dirty }">
+            <label class="my-form-label req-label" for="regPassword">Password</label>
+            <input type="password" class="form-control my-form-input" ng-pattern="/(?=.*\d)(?=.*\W)(?=.*[^a-zA-Z])/" ng-minlength="8" ng-maxlength="20" ng-model="registration.user.regPassword" name="regPassword" id="regPassword" placeholder="Password" required>
+        </div>
+        
+        <div class="pull-right">
+            <button type="submit" ng-click="registration.cancelRegistration()" class="btn btn-success my-form-btn not-last-btn">Cancel</button>
+            <button type="submit" ng-disabled="registrationForm.$invalid" class="btn btn-success my-form-btn">Submit</button>
+        </div>
+    </form>
+    </div>
+</div>

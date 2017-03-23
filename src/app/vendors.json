@@ -1,0 +1,67 @@
+[
+    {
+        "title": "Paratha Corner",
+        "img": "assets/images/parathaCorner.jpg",
+        "menuItems": [{
+                "name": "Stuffed Paratha",
+                "rate": 40
+            },{
+                "name": "Normal Paratha",
+                "rate": 20
+            },{
+                "name": "Plain Paratha",
+                "rate": 10
+            },{
+                "name": "Tawa Paratha",
+                "rate": 30
+            }]
+    },{
+        "title": "Pavitra Juice Center",
+        "img": "assets/images/pavitraJuiceCenter.jpg",
+        "menuItems": [{
+                "name": "Mango Shake",
+                "rate": 50
+            },{
+                "name": "Strawberry Shake",
+                "rate": 60
+            },{
+                "name": "Mixed Fruit Juice",
+                "rate": 80
+            },{
+                "name": "Pineapple Juice",
+                "rate": 70
+            }]
+    },{
+        "title": "Parathe Wali Gali",
+        "img": "assets/images/paratheWaliGali.jpg",
+        "menuItems": [{
+                "name": "Cabbage Paratha",
+                "rate": 20
+            },{
+                "name": "Cheese Paratha",
+                "rate": 40
+            },{
+                "name": "Egg Paratha",
+                "rate": 50
+            },{
+                "name": "Veg Paratha",
+                "rate": 60
+            }]
+    },{
+        "title": "The Juice Shop",
+        "img": "assets/images/theJuiceShop.jpg",
+        "menuItems": [{
+                "name": "Dependency Shake",
+                "rate": 20
+            },{
+                "name": "Controllers Shake",
+                "rate": 30
+            },{
+                "name": "Services Juice",
+                "rate": 40
+            },{
+                "name": "Directives Juice",
+                "rate": 70
+            }]
+    }
+]

@@ -1,0 +1,22 @@
+<div class="animated fadeIn">
+    <p class="higlighted-label" ng-bind="confirmOrder.vendor.title"></p>
+    <ul class="menu-item-ul">
+        <li class="menu-items-list" ng-repeat="oneMenuItem in confirmOrder.vendor.menuItems">
+            <div class="menu-item row">
+                <div class="menu-item-name col-lg-4 col-md-4 col-sm-4 col-xs-4" ng-bind="oneMenuItem.name"></div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 quantity-display">
+                    <span ng-bind="oneMenuItem.quantity"></span>
+                </div>
+                <div class="menu-item-rate col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    Rs  <span ng-bind="(oneMenuItem.quantity == undefined) ? 0: (oneMenuItem.quantity * oneMenuItem.rate)"></span>
+                </div>
+            </div>
+            
+        </li>
+    </ul>
+    <div class="pull-right">
+        <p class="total-label">Total Value</p>
+        <div class="total-money">RS  {{confirmOrder.vendor.totalCost}}</div>
+        <button type="submit" ng-click="confirmOrder.checkout(confirmOrder.vendor)" class="btn btn-success checkout-btn pull-right">Confirm Order</button>
+    </div>    
+</div>
